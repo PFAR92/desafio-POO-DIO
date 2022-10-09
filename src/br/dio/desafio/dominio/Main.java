@@ -1,4 +1,7 @@
 package br.dio.desafio.dominio;
+
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) throws Exception {
         
@@ -14,5 +17,12 @@ public class Main {
 
         System.out.println(curso1);
         System.out.println(curso2);
+
+        Mentoria mentoria = new Mentoria();
+        mentoria.setTitulo("mentoria Java");
+        mentoria.setDescricao("descrição mentoria Java");
+        mentoria.setData(LocalDate.now());
+
+        System.out.println(mentoria);
     }
 }
