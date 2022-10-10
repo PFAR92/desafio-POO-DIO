@@ -5,8 +5,7 @@ public class Curso  extends Conteudo{
 
     @Override
     public double caucularXp() {
-        // TODO Auto-generated method stub
-        return 0;
+        return XP_PADRAO * cargaHoraria;
     }
 
     public int getCargaHoraria() {
